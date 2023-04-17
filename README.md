@@ -1,6 +1,6 @@
 # Kubernetes ([CHEAT SHEET](https://kubernetes.io/docs/reference/kubectl/cheatsheet/))
 ## Set the config:
--  aws eks update-kubeconfig --region us-east-1 --name cnc-clut-core-tst-us-east-1 --no-verify-ssl
+-  aws eks update-kubeconfig --region us-east-1 --name <eks_cluster_name> --no-verify-ssl
 
 ## Events
 ### Get events for name space:
@@ -98,3 +98,6 @@
 
 ### Port forward
 - kubectl -n <name_space> port-forward <pod_name> 14269:14269
+
+### delete pod
+- kubectl delete pod <pod_name> -n <name_space>
