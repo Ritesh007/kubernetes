@@ -85,10 +85,10 @@
 - kubectl describe pod <pod_name> -n <namespace_name>
 
 ### Get pods list for name space:
-- kubectl get pod -n <namespace>
+- kubectl get pod -n <name_space>
 
 ### Get logs for a pod for name space:
-- kubectl logs -n <namespace> <pod_name>
+- kubectl logs -n <name_space> <pod_name>
 
 ### Wide view for pods
 - kubectl get pod -o wide -n <name_space>
