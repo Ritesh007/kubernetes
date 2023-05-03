@@ -99,5 +99,8 @@
 ### Port forward
 - kubectl -n <name_space> port-forward <pod_name> 14269:14269
 
+### log in to the pod with an interactive bash terminal
+- kubectl exec -n <name_space> -it <pod_name> -- /bin/bash
+
 ### delete pod
 - kubectl delete pod <pod_name> -n <name_space>
