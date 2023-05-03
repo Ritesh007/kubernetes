@@ -102,5 +102,8 @@
 ### log in to the pod with an interactive bash terminal
 - kubectl exec -n <name_space> -it <pod_name> -- /bin/bash
 
+### Copy files from local machine to the pod
+- kubectl cp <path_to_local_file> <name_space>/<pod_name>:<path_to_file_in_pod>
+
 ### delete pod
 - kubectl delete pod <pod_name> -n <name_space>
